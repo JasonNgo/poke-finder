@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D33475B1DBE934F00322A27 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D33475A1DBE934F00322A27 /* PokeAnnotation.swift */; };
 		7DAB98581DBC4989007F89E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB98571DBC4989007F89E1 /* AppDelegate.swift */; };
-		7DAB985A1DBC4989007F89E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB98591DBC4989007F89E1 /* ViewController.swift */; };
+		7DAB985A1DBC4989007F89E1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB98591DBC4989007F89E1 /* MainVC.swift */; };
 		7DAB985D1DBC4989007F89E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAB985B1DBC4989007F89E1 /* Main.storyboard */; };
 		7DAB985F1DBC4989007F89E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DAB985E1DBC4989007F89E1 /* Assets.xcassets */; };
 		7DAB98621DBC4989007F89E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAB98601DBC4989007F89E1 /* LaunchScreen.storyboard */; };
@@ -23,9 +24,10 @@
 
 /* Begin PBXFileReference section */
 		71A2856CE68AEFC78E099B22 /* Pods-poke-finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-poke-finder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-poke-finder/Pods-poke-finder.debug.xcconfig"; sourceTree = "<group>"; };
+		7D33475A1DBE934F00322A27 /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		7DAB98541DBC4989007F89E1 /* poke-finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "poke-finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAB98571DBC4989007F89E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DAB98591DBC4989007F89E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DAB98591DBC4989007F89E1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7DAB985C1DBC4989007F89E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DAB985E1DBC4989007F89E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DAB98611DBC4989007F89E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7D9C9C261DBE85840087B276 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D33475A1DBE934F00322A27 /* PokeAnnotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7D9C9C271DBE858D0087B276 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DAB98601DBC4989007F89E1 /* LaunchScreen.storyboard */,
+				7DAB985B1DBC4989007F89E1 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7D9C9C281DBE85910087B276 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DAB98591DBC4989007F89E1 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		7DAB984B1DBC4989007F89E1 = {
 			isa = PBXGroup;
 			children = (
@@ -101,13 +128,13 @@
 		7DAB98561DBC4989007F89E1 /* poke-finder */ = {
 			isa = PBXGroup;
 			children = (
-				7DAB986B1DBC4AEE007F89E1 /* GeoFire */,
 				7DAB98691DBC4A46007F89E1 /* GoogleService-Info.plist */,
 				7DAB98571DBC4989007F89E1 /* AppDelegate.swift */,
-				7DAB98591DBC4989007F89E1 /* ViewController.swift */,
-				7DAB985B1DBC4989007F89E1 /* Main.storyboard */,
+				7D9C9C261DBE85840087B276 /* Model */,
+				7D9C9C281DBE85910087B276 /* Controller */,
+				7D9C9C271DBE858D0087B276 /* View */,
+				7DAB986B1DBC4AEE007F89E1 /* GeoFire */,
 				7DAB985E1DBC4989007F89E1 /* Assets.xcassets */,
-				7DAB98601DBC4989007F89E1 /* LaunchScreen.storyboard */,
 				7DAB98631DBC4989007F89E1 /* Info.plist */,
 				7DAB98821DBC4B28007F89E1 /* poke-finder-Bridging-Header.h */,
 			);
@@ -278,7 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DAB987E1DBC4AEE007F89E1 /* GFBase32Utils.m in Sources */,
-				7DAB985A1DBC4989007F89E1 /* ViewController.swift in Sources */,
+				7D33475B1DBE934F00322A27 /* PokeAnnotation.swift in Sources */,
+				7DAB985A1DBC4989007F89E1 /* MainVC.swift in Sources */,
 				7DAB987F1DBC4AEE007F89E1 /* GFGeoHash.m in Sources */,
 				7DAB98581DBC4989007F89E1 /* AppDelegate.swift in Sources */,
 				7DAB987D1DBC4AEE007F89E1 /* GeoFire.m in Sources */,
