@@ -1,5 +1,7 @@
 Poke-Finder
 
+FOR EDUCATIONAL PURPOSES
+
 Record your sightings of pokemon you find around the world!
 
 Program specifications:
